@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../styles/aboutpage.css";
+import { Link } from "react-router-dom";
 
 function AboutPage() {
   const stickySectionsRef = useRef([]);
@@ -46,25 +47,41 @@ function AboutPage() {
           ref={(el) => (stickySectionsRef.current[0] = el)}
         >
           <div className="scroll_section bg-green-400 flex gap-4">
-            <div className="flex-1 p-10">
-              <h2 className="text-6xl mb-4 text-white">OUR VISION</h2>
-              <p className="text-xl mb-4 text-white">
+            <div className="flex flex-col flex-1 p-10">
+              <div className="flex justify-center gap-6">
+                <h2 className="text-6xl mb-4 text-white self-center">
+                  OUR VISION
+                </h2>
+                <img className="w-25" src="vision.svg" />
+              </div>
+
+              <p className="text-xl mt-6 text-white self-center">
                 To inspire businesses to embrace sustainability and create
                 meaningful change through innovative, eco-conscious strategies.
               </p>
             </div>
 
-            <div className="flex-1 p-10">
-              <h2 className="text-6xl mb-4 text-white">OUR MISSION</h2>
-              <p className="text-xl mb-4 text-white">
+            <div className="flex flex-col flex-1 p-10">
+              <div className="flex justify-center gap-6">
+                <h2 className="text-6xl mb-4 text-white self-center">
+                  OUR MISSION
+                </h2>
+                <img className="w-25" src="mission.svg" />
+              </div>
+              <p className="text-xl mt-6 text-white self-center">
                 We focus on eco-friendly marketing and green corporate
                 communication.
               </p>
             </div>
 
-            <div className="flex-1 p-10">
-              <h2 className="text-6xl mb-4 text-white">OUR IMPACT</h2>
-              <p className="text-xl mb-4 text-white">
+            <div className="flex flex-col flex-1 p-10">
+              <div className="flex justify-center gap-6">
+                <h2 className="text-6xl mb-4 text-white self-center">
+                  OUR IMPACT
+                </h2>
+                <img className="w-25" src="mission.svg" />
+              </div>
+              <p className="text-xl mt-6 text-white self-center">
                 Together, we can shape a better future through innovative,
                 sustainable practices.
               </p>
@@ -83,6 +100,11 @@ function AboutPage() {
               Together, we can create a sustainable future. Let’s work towards
               positive change!
             </p>
+            <button className="bg-green-700 text-white py-3 px-8 rounded-full border-4 border-transparent hover:bg-green-800 hover:border-green-400 hover:text-green-100 transform hover:scale-110 transition-all duration-300 ease-in-out shadow-2xl">
+              <Link to="/contact" className="text-white">
+                Contact Us!
+              </Link>
+            </button>
           </div>
         </div>
       </section>
