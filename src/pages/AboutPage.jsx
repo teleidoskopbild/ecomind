@@ -31,6 +31,7 @@ function AboutPage() {
       <section className="relative h-screen">
         <div className="bg-green-500 relative z-5 flex items-center justify-center h-full">
           <div className="flex flex-col items-center text-center text-white">
+            <img className="w-25 mb-4" src="leaf.svg"></img>
             <h1 className="text-6xl font-bold mb-2">ECOMIND</h1>
             <p className="text-xl mb-4 w-[90%] md:w-[40%]">
               Welcome to EcoMind Agency – your creative partner for sustainable
