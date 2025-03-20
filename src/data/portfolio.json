@@ -1,0 +1,44 @@
+[
+  {
+    "front": { "src": "/greenwave.jpg" },
+    "back": {
+      "title": "GreenWave",
+      "description": "Branding and social media strategy for an eco-friendly fashion brand. Focus on ethical production and recycled materials."
+    }
+  },
+  {
+    "front": { "src": "/ecobites.jpg" },
+    "back": {
+      "title": "EcoBites",
+      "description": "Developed packaging and branding for an organic snack brand. Designed plastic-free packaging with a natural color palette."
+    }
+  },
+  {
+    "front": { "src": "solarvision.jpg" },
+    "back": {
+      "title": "SolarVision",
+      "description": "Created an optimized website for a renewable energy company, improving visibility by 60% through SEO strategies."
+    }
+  },
+  {
+    "front": { "src": "pureearth.jpg" },
+    "back": {
+      "title": "PureEarth",
+      "description": "Social media campaign promoting recycling and zero-waste concepts. Community engagement increased by 25%."
+    }
+  },
+  {
+    "front": { "src": "greentech.jpg" },
+    "back": {
+      "title": "GreenTech Solutions",
+      "description": "Developed a corporate identity and web presence for a sustainable technology startup, including logo and color concept."
+    }
+  },
+  {
+    "front": { "src": "biogrow.jpg" },
+    "back": {
+      "title": "BioGrow",
+      "description": "Content and marketing strategy for an urban gardening initiative, creating blog articles, social media posts, and infographics."
+    }
+  }
+]

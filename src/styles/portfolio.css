@@ -1,0 +1,17 @@
+.card {
+  perspective: 800px;
+}
+.card_content {
+  transform-style: preserve-3d;
+}
+.card:hover .card_content {
+  transform: rotateY(0.5turn);
+}
+
+.card_front,
+.card_back {
+  backface-visibility: hidden;
+}
+.card_back {
+  transform: rotateY(0.5turn);
+}
