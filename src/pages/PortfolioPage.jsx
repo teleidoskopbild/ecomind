@@ -1,4 +1,4 @@
 function PortfolioPage() {
-  return <h1>Portfolio</h1>;
+  return <div className="h-screen w-full bg-green-500"></div>;
 }
 export default PortfolioPage;
