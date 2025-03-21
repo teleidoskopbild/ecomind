@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="fixed z-10 bg-green-700 p-4 w-full text-white text-lg">
+    <nav className="fixed top-0 z-10 bg-green-700 p-3 w-full text-white text-lg">
       <ul className="flex gap-8">
         <li className="hover:scale-110 transition-transform duration-300">
           <Link to="/">About Us</Link>
