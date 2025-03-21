@@ -3,11 +3,11 @@ import "../styles/portfolio.css";
 
 function PortfolioPage() {
   return (
-    <div className="min-h-screen bg-green-400 flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-green-500 flex flex-col justify-center items-center overflow-y-hidden">
       <h1 className="text-6xl font-bold text-white text-center mt-24 sm:mt-12">
         OUR PORTFOLIO
       </h1>
-      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
+      <div className="mb-2 mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
         {portfolio.map((portfolio, index) => (
           <div key={index} className="card relative w-60 h-60">
             <div className="card_content w-full h-full text-center transition-transform duration-1000 text-white font-bold">
