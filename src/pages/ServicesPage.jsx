@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function MotionProject() {
+export default function Services() {
   const [counter, setCounter] = useState(0);
   let scrollCount = 0;
 
