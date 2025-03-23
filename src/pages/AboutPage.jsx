@@ -73,7 +73,7 @@ function AboutPage() {
                 <h2 className="text-6xl mb-4 text-white self-center">
                   OUR MISSION
                 </h2>
-                <img className="w-25" src="mission.svg" />
+                <img className="w-25" src="/mission.svg" />
               </div>
               <p className="text-xl mt-6 text-white self-center">
                 We focus on eco-friendly marketing and green corporate
@@ -86,7 +86,7 @@ function AboutPage() {
                 <h2 className="text-6xl mb-4 text-white self-center">
                   OUR IMPACT
                 </h2>
-                <img className="w-25" src="mission.svg" />
+                <img className="w-25" src="/impact.svg" />
               </div>
               <p className="text-xl mt-6 text-white self-center">
                 Together, we can shape a better future through innovative,
