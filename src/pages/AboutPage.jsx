@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../styles/aboutpage.css";
+import "../styles/animations.css";
 import { Link } from "react-router-dom";
 
 function AboutPage() {
@@ -38,6 +39,11 @@ function AboutPage() {
               branding, eco-friendly marketing, and green corporate
               communication. Let’s shape a better future together!
             </p>
+            <img
+              className="w-12 md:w-24 self-center float-animation"
+              src="/scroll.svg"
+              alt="scroll-symbol"
+            ></img>
           </div>
         </div>
       </section>

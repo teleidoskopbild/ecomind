@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../styles/services.css";
+import "../styles/animations.css";
 
 export default function Services() {
   const [counter, setCounter] = useState(0);
