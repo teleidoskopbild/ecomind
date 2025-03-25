@@ -3,6 +3,7 @@ import "../styles/animations.css";
 
 export default function Services() {
   const [counter, setCounter] = useState(0);
+
   let scrollCount = 0;
 
   const handleScroll = (event) => {
@@ -17,11 +18,33 @@ export default function Services() {
     }
   };
 
+  let touchStartY = 0;
+
+  const handleTouchStart = (event) => {
+    touchStartY = event.touches[0].clientY;
+  };
+
+  const handleTouchMove = (event) => {
+    const touchEndY = event.touches[0].clientY;
+    const deltaY = touchStartY - touchEndY;
+
+    if (Math.abs(deltaY) > 30) {
+      setCounter((prev) =>
+        deltaY > 0 ? Math.min(prev + 1, 9) : Math.max(prev - 1, 0)
+      );
+      touchStartY = touchEndY;
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("wheel", handleScroll);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchmove", handleTouchMove);
 
     return () => {
       window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
     };
   });
 
