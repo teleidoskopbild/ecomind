@@ -30,7 +30,7 @@ export default function Services() {
 
     if (Math.abs(deltaY) > 30) {
       setCounter((prev) =>
-        deltaY > 0 ? Math.min(prev + 1, 9) : Math.max(prev - 1, 0)
+        deltaY > 0 ? Math.min(prev + 9, 9) : Math.max(prev - 9, 0)
       );
       touchStartY = touchEndY;
     }
